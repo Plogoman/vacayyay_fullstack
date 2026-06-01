@@ -37,7 +37,6 @@ jobs:
       - name: Run linter
         run: |
           npm run lint
-          rm -f .eslintcache
 
   # ─────────────────────────────────────────
   # JOB 2: Build / Smoke-test
