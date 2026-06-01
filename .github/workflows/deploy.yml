@@ -35,7 +35,9 @@ jobs:
       #   "lint": "eslint . --ext .js,.ts"
       # If you don't have ESLint yet, see the note at the bottom of this file.
       - name: Run linter
-        run: npm run lint
+        run: |
+          npm run lint
+          rm -f .eslintcache
 
   # ─────────────────────────────────────────
   # JOB 2: Build / Smoke-test
