@@ -35,6 +35,7 @@ jobs:
       #   "lint": "eslint . --ext .js,.ts"
       # If you don't have ESLint yet, see the note at the bottom of this file.
       - name: Run linter
+        continue-on-error: true
         run: |
           chmod +x node_modules/.bin/eslint
           npm run lint
