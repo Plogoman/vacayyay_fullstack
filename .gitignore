@@ -1,2 +1,5 @@
+.env
+.eslintcache
+*.log
+node_modules/
 .idea
-
