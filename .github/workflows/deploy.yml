@@ -28,7 +28,9 @@ jobs:
           cache-dependency-path: package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        run: |
+         npm ci
+         npm rebuild better-sqlite3 --build-from-source
 
       # ── Linting ──────────────────────────
       # Requires an "lint" script in package.json, e.g.:
