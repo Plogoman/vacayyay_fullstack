@@ -36,8 +36,8 @@ jobs:
       # If you don't have ESLint yet, see the note at the bottom of this file.
       - name: Run linter
         run: |
+          chmod +x node_modules/.bin/eslint
           npm run lint
-
   # ─────────────────────────────────────────
   # JOB 2: Build / Smoke-test
   # Verifies the app actually starts up

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "lint": "eslint . --no-cache "
+    "lint": "npx eslint . --no-cache "
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
