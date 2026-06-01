@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 'lts/*'       # always uses the current LTS
           cache: 'npm'
-          cache-dependency-path: vacayyay_fullstack/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         run: npm install
